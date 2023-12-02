@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Movie</title>
+</head>
+<body>
+    <h1>Delete Movie</h1>
+    <p>Are you sure you want to delete this movie?</p>
+    <form action="/delete_movie/{{ movie_id }}" method="post">
+        <button type="submit">Confirm Delete</button>
+    </form>
+    <a href="/">Cancel</a>
+</body>
+</html>

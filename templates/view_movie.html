@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Movie</title>
+</head>
+<body>
+    <h1>{{ movie.title }}</h1>
+    <p><img src="{{ movie.image_url }}" alt="{{ movie.title }}"></p>
+    <p>Streaming URL: <a href="{{ movie.url_streaming }}">{{ movie.url_streaming }}</a></p>
+    <p>Last Updated: {{ movie.updated }}</p> 
+    <a href="/delete_movie/{{ movie.movie_id }}">Delete Movie</a>
+    <br><br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

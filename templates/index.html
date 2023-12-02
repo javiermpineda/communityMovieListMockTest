@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community movie list</title>
+</head>
+<body>
+    <h1>Welcome to the Community Movie List</h1>
+    <h2>Options</h2>
+    <ul>
+        <li><a href="/add_movie">Add a New Movie</a></li>
+    </ul>
+    <h2>Available Movies</h2>
+    <ul>
+        {% for movie in movies %}
+            <li>
+                {{ movie.title }} - 
+                <a href="/view_movie/{{ movie.movie_id }}">View</a> | 
+                <form action="/delete_movie/{{ movie.movie_id }}" method="post" style="display: inline;">
+                    <input type="submit" value="Delete">
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

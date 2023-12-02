@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Movie</title>
+</head>
+<body>
+    <h1>Add a New Movie</h1>
+    <form action="/add_movie" method="post">
+        <label for="movie_id">Movie ID:</label><br>
+        <input type="number" id="movie_id" name="movie_id" required><br>
+
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="image_url">Image URL:</label><br>
+        <input type="text" id="image_url" name="image_url" required><br>
+
+        <label for="url_streaming">Streaming URL:</label><br>
+        <input type="text" id="url_streaming" name="url_streaming" required><br>
+
+        <input type="submit" value="Add Movie">
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>
